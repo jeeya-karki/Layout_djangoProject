@@ -20,8 +20,11 @@ from App1.views import fruit
 from App1_print2.views import vegtable
 
 
+
 urlpatterns = [
     path('admin/', admin.site.urls),
-    #path('frts/', fruit),
-    path('veg/', include('App1_print2.url'))
+    path('frts/', fruit),
+    path('veg/', include('App1_print2.url')),
+    path('prd/', include('Product_app.Product_url')),
+    path('emp/', include('employee.employee_url'))
 ]

@@ -1,7 +1,7 @@
 from django.shortcuts import render
-
+from django.http import HttpResponse
 # Create your views here.
 def vegtable(request):
-    return render("This fuction is related to vegetables");
+    return HttpResponse("This fuction is related to vegetables")
 
 
